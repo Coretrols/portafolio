@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header></header>
+    <main class="presentacion">
+        <section class="presentacion__contenido">
+            <h1 class="presentacion__contenido__titulo">
+                Eleve su negocio digital a otro nivel 
+                <strong class="titulo-destaque">con un Full-Stack de calidad!
+                </strong></h1>
+                <p class="presentacion__contenido__texto">¡Hola! Soy Samir Steven, desarrollador Full Stack con
+                    especialización en JavaScript, HTML, CSS, .NET, SQL. me desempeño como Freelancer
+                    ayudando ha hacer realizar esas buenas ideas.                                
+
+                </p>
+                <h2 class="fire-text">¿Hablamos?</h2>
+                <div class="presentacion__enlaces">
+                    <h2 class="presentacion__enlaces__subtitulo">Accede a mis Redes: </h2>
+
+                    <a class="presentacion__enlaces__link" href="https://www.instagram.com/samirstevenmurillo/">
+                        <img src="./assets/instagram.png" alt="Icono de Instagram">Instagram </a>
+                    <a class="presentacion__enlaces__link" href="https://github.com/">                    
+                        <img src="./assets/github.png" alt="Icono de github">GitHub</a>
+                    <a class="presentacion__enlaces__link" href="https://www.linkedin.com/in/samir-steven-murillo-betancur-9882541bb">                    
+                        <img src="./assets/linkedin.png" alt="Icono de LinkedIn">LinkedIn</a>
+                </div>
+                <!-- Introducción musical :) -->
+                <div class="presentacion__contenido__musica">
+                    <audio id="music" src="./assets/cafu banton - vamos pa' la playa.mp3" preload="auto"></audio>  
+                    <button class="presentacion__contenido__musica___reproducir" onclick="document.getElementById('music').pause()">Pausar</button>
+                    <button class="presentacion__contenido__musica___reproducir" onclick="document.getElementById('music').play()">reproducir</button>   
+                    <script>
+                        window.onload = function() {
+                            var music = document.getElementById('music');
+                            music.play().catch(function(error) {
+                                console.log("No se pudo reproducir la música automáticamente: " + error);
+                            });
+                        };
+                    </script>             
+            </div>
+
+        </section>
+            <img src="./assets/yo.png" alt="Foto de Samir Steven despues de entrenar">
+        
+               
+        <!-- <audio id="music" src="./assets/cafu banton - vamos pa' la playa.mp3" preload="auto"></audio>
+    <button onclick="document.getElementById('music').play()">Reproducir Música</button> -->
+    </main>
+    <footer>desarrolando por Steven Murillo</footer>
+</body>
+</html>
